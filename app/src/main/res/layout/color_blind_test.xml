@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISHIHARA TESTING"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light">
+    </TextView>
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn nhìn thấy số bao nhiêu?"
+        android:textSize="20dp"
+        android:gravity="center">
+    </TextView>
+    <RadioGroup
+        android:id="@+id/answerGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Xác nhận" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quay lại"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:id="@+id/tvBack"
+        android:paddingTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/resultTextView"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#808080"
+        android:layout_marginTop="100dp"
+        android:text="This test is inspired by the famous Ishihara color vision test, which is widely used to detect color blindness, particularly red-green color deficiencies.">
+    </TextView>
+</LinearLayout>
