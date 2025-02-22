@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "329936162570",
+    "firebase_url": "https://visionify-ed014-default-rtdb.firebaseio.com",
+    "project_id": "visionify-ed014",
+    "storage_bucket": "visionify-ed014.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329936162570:android:7c0aefb88aaad6aaf134f3",
+        "android_client_info": {
+          "package_name": "com.khoidubai.auravision"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVaZepCx-4aIL36WMHa1kRIHnBFA009Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
