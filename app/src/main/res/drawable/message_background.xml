@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#2196F3"/> <!-- Màu xanh dương -->
+    <solid android:color="@android:color/holo_blue_light"/> <!-- Màu xanh dương -->
     <corners android:radius="16dp"/> <!-- Bo góc mềm mại -->
     <padding android:left="10dp" android:top="8dp" android:right="10dp" android:bottom="8dp"/>
     <shadow android:radius="4dp" android:color="#55000000"/> <!-- Đổ bóng -->

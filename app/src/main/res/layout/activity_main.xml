@@ -46,7 +46,6 @@
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:scaleType="fitCenter"
-                android:text="hehe"
                 android:src="@drawable/imgbtncamera"
                 android:id="@+id/btnCameraDetect">
             </ImageButton>
@@ -55,7 +54,6 @@
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:scaleType="fitCenter"
-                android:text="hehe"
                 android:src="@drawable/imgbtnlearn"
                 android:id="@+id/btnLearning">
             </ImageButton>
@@ -77,11 +75,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="5dp"
-                android:text="Learn with Us"
+                android:text="Learn Color with Aura"
                 android:textSize="14sp"
                 android:textColor="@android:color/black" />
         </TableRow>
-
 
         <TableRow
             android:layout_width="match_parent"

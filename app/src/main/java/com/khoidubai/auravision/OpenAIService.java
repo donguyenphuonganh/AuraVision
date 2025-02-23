@@ -7,7 +7,7 @@ import retrofit2.http.POST;
 public interface OpenAIService {
     @Headers({
             "Content-Type: application/json",
-            "Authorization: Bearer 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"
+            "Authorization: Bearer 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"
     })
     @POST("chat/completions")
     Call<OpenAIResponse> getChatResponse(@Body OpenAIRequest request);
