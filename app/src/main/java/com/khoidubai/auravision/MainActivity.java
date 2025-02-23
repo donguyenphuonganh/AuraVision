@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btnChatBot = findViewById(R.id.btnChatBot);
 
         btnCameraDetect.setOnClickListener(view -> {
-            Toast.makeText(MainActivity.this, "Chức năng Camera Detect đang phát triển!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, ColorpickerActivity.class);
+            startActivity(intent);
+
         });
 
         btnLearning.setOnClickListener(view -> {
