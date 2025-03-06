@@ -32,7 +32,7 @@ public class Plashscreen extends AppCompatActivity {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                startActivity(new Intent(Plashscreen.this, MainActivity.class));
+                startActivity(new Intent(Plashscreen.this, LoginActivity.class));
                 finish(); // Đóng SplashScreen
             }
         });

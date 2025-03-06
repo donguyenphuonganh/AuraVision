@@ -29,12 +29,12 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/loginTextUser"
+            android:id="@+id/edtLoginUserName"
             android:hint="SDT/Email/Tên người dùng:"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/loginTextPass"
+            android:id="@+id/edtLoginPass"
             android:hint="Mật khẩu:"
             android:inputType="textPassword"/>
         <Button
