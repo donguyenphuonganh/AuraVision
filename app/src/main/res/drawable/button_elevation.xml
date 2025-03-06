@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <objectAnimator
+            android:propertyName="elevation"
+            android:valueTo="8dp"
+            android:duration="100"
+            android:valueType="floatType"/>
+    </item>
+    <item>
+        <objectAnimator
+            android:propertyName="elevation"
+            android:valueTo="0dp"
+            android:duration="100"
+            android:valueType="floatType"/>
+    </item>
+</selector>
