@@ -8,29 +8,51 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class OverlayView extends View {
-    private float touchX = -1, touchY = -1;
+    private float touchX = -1;
+    private float touchY = -1;
     private Paint circlePaint;
+    private int circleColor = Color.WHITE;
+
+    public OverlayView(Context context) {
+        super(context);
+        init();
+    }
 
     public OverlayView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
+    }
+
+    private void init() {
         circlePaint = new Paint();
-        circlePaint.setColor(Color.WHITE); // Màu viền vòng tròn
         circlePaint.setStyle(Paint.Style.STROKE);
         circlePaint.setStrokeWidth(5);
         circlePaint.setAntiAlias(true);
     }
 
     public void setTouchPosition(float x, float y) {
-        touchX = x;
-        touchY = y;
-        invalidate(); // Vẽ lại view
+        this.touchX = x;
+        this.touchY = y;
+        invalidate();
+    }
+
+    public void setCircleColor(int color) {
+        this.circleColor = color;
+        circlePaint.setColor(color);
+        invalidate();
+    }
+
+    public void clearTouchPosition() {
+        this.touchX = -1;
+        this.touchY = -1;
+        invalidate();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (touchX >= 0 && touchY >= 0) {
-            canvas.drawCircle(touchX, touchY, 20, circlePaint); // Vẽ vòng tròn
+            canvas.drawCircle(touchX, touchY, 20, circlePaint);
         }
     }
 }

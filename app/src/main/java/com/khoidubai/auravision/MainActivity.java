@@ -2,20 +2,30 @@ package com.khoidubai.auravision;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import org.opencv.android.OpenCVLoader;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Kiểm tra xem OpenCV có load thành công không
+        if (OpenCVLoader.initDebug()) {
+            Log.d(TAG, "✔ OpenCV Loaded Successfully!");
+        } else {
+            Log.e(TAG, "❌ OpenCV Load Failed!");
+        }
 
         ImageButton btnCameraDetect = findViewById(R.id.btnCameraDetect);
         ImageButton btnLearning = findViewById(R.id.btnLearning);

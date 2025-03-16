@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "AuraVision"
 include(":app")
+include(":opencv")
+include(":sdk")
+project(":opencv").projectDir = File(rootDir, "app/src/jiniLibs/OpenCV-android-sdk/sdk/")
